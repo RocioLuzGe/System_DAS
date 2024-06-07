@@ -9,7 +9,7 @@ namespace Sistema_DAS.Models
 		public string? Nombre_Curso { get; set; }
 		public string? Nombre_Docente { get; set; }
 		public string? Lugar { get; set; }
-		public TipoEnum Tipo { get; set; }
+		public TipoEnum? Tipo { get; set; }
 		public string Foto_url { get; set; }
 		public string Video_url { get; set; }
 
