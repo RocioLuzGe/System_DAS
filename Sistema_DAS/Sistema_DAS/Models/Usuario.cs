@@ -2,7 +2,7 @@ using Sistema_DAS.Dto;
 using System.ComponentModel.DataAnnotations;
 namespace Sistema_DAS.Models
 {
-    public class User
+    public class Usuario
     {
         [Key]
         public int Id { get; set; }
