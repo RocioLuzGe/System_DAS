@@ -1,3 +1,4 @@
+using Sistema_DAS.Dto;
 using System.ComponentModel.DataAnnotations;
 namespace Sistema_DAS.Models
 {
@@ -10,10 +11,10 @@ namespace Sistema_DAS.Models
 		public string? Nombre_Docente { get; set; }
 		public string? Lugar { get; set; }
 		public TipoEnum? Tipo { get; set; }
-		public string Foto_url { get; set; }
-		public string Video_url { get; set; }
+		public string? Foto_url { get; set; }
+		public string? Video_url { get; set; }
 
 		//relacion de 1 -----> *
-		public virtual List<Inscripcion> Inscripciones { get; set; }	
+		public virtual List<Inscripcion>? Inscripciones { get; set; }	
 	}
 }

@@ -13,7 +13,7 @@ namespace Sistema_DAS.Models
         public int Celular { get; set; }
         public string? Direccion { get; set; }
         //relacion de 1 -----> *
-        public virtual List<Inscripcion> Inscripciones { get; set; }
+        public virtual List<Inscripcion>? Inscripciones { get; set; }
 
     }
 }
