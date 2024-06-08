@@ -1,9 +1,16 @@
+using Microsoft.EntityFrameworkCore;
+using Sistema_DAS.Context;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
+// Add connection string
+builder.Services.AddDbContext<MiContext>(options => {
+    options.UseSqlite(builder.Configuration.GetConnectionString("CadenaConexion"));
+});
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
