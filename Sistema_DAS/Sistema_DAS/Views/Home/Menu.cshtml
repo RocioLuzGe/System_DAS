@@ -1,0 +1,78 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Cursos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .menu-container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .course-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .course-item {
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #e7e7e7;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .course-item:hover {
+            background-color: #d7d7d7;
+        }
+        .course-link {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+        .course-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <h1>Menú de Cursos</h1>
+        <ul class="course-list">
+            <li class="course-item">
+                <a href="#curso1" class="course-link">Curso 1: Introducción a la Programación</a>
+                <p>Aprende los conceptos básicos de la programación.</p>
+            </li>
+            <li class="course-item">
+                <a href="#curso2" class="course-link">Curso 2: Desarrollo Web</a>
+                <p>Construye sitios web modernos y responsivos.</p>
+            </li>
+            <li class="course-item">
+                <a href="#curso3" class="course-link">Curso 3: Análisis de Datos</a>
+                <p>Analiza grandes cantidades de datos para obtener información valiosa.</p>
+            </li>
+            <li class="course-item">
+                <a href="#curso4" class="course-link">Curso 4: Inteligencia Artificial</a>
+                <p>Explora las técnicas y aplicaciones de la inteligencia artificial.</p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
