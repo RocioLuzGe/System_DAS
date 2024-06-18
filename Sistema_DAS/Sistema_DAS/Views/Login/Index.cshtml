@@ -16,7 +16,7 @@
         }
 
         .bg {
-            background-image: url('FONDO.jpg'); /*ruta de tu imagen */
+            background-image: url('/images/FONDO.jpg'); /*ruta de tu imagen */
             height: 100%;
             background-position: center;
             background-repeat: no-repeat;
@@ -53,6 +53,8 @@
                             </div>
                             @if (TempData["LoginError"] != null)
                             {
+
+
                                 <div class="alert alert-danger">@TempData["LoginError"]</div>
                             }
                             <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
