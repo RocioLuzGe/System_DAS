@@ -4,7 +4,7 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
+<h1>EDITAR</h1>
 
 <h4>Usuario</h4>
 <hr />
@@ -14,34 +14,38 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
             <div class="form-group">
-                <label asp-for="Email" class="control-label"></label>
+                <label asp-for="Email" class="control-label">Correo</label>
                 <input asp-for="Email" class="form-control" />
                 <span asp-validation-for="Email" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Nombre_user" class="control-label"></label>
+                <label asp-for="Nombre_user" class="control-label">Nombre de Usuario</label>
                 <input asp-for="Nombre_user" class="form-control" />
                 <span asp-validation-for="Nombre_user" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Password" class="control-label"></label>
+                <label asp-for="Password" class="control-label">Contraseña</label>
                 <input asp-for="Password" class="form-control" />
                 <span asp-validation-for="Password" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Rol" class="control-label"></label>
-                <select asp-for="Rol" class="form-control"></select>
+                <label asp-for="Rol" class="control-label">Rol</label>
+                <select asp-for="Rol" class="form-control">
+                    <option value=""> Seleccione </option>
+                    <option value="1"> Director </option>
+                    <option value="2"> Secretaria </option>
+                </select>
                 <span asp-validation-for="Rol" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Guardar" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Atras</a>
 </div>
 
 @section Scripts {
