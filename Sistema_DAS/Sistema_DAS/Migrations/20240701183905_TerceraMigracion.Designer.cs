@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Sistema_DAS.Context;
 
@@ -10,9 +11,11 @@ using Sistema_DAS.Context;
 namespace Sistema_DAS.Migrations
 {
     [DbContext(typeof(MiContext))]
-    partial class MiContextModelSnapshot : ModelSnapshot
+    [Migration("20240701183905_TerceraMigracion")]
+    partial class TerceraMigracion
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.6");
